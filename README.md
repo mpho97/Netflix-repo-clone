@@ -6,4 +6,7 @@
 6. Adding class selectors
 
 /*starting with css*/
-1. 
+1. Flexboxs
+2. Positions
+3. Psuedo classes
+4. Overlay
