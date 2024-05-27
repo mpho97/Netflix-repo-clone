@@ -11,3 +11,9 @@
 2. Positions
 3. Psuedo classes
 4. Overlay
+
+/*Starting with vanilla Javascript*/
+
+1. Adding animation to each question button
+2. Rotation each question button to 45deg
+3. Displaying each answer on button clicking  event
