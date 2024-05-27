@@ -170,23 +170,27 @@ h2{
 .question p{
     font-size: 20px;
 }
-.question .open-answer{
+.open-answer{
     cursor: pointer;
     font-size: 3rem;
 }
+.open-answer.active{
+     transform: rotate(45deg);
+}
 .answer{
     width: 100%;
+    height: 0;
     background-color: #222;
     text-align: left;
     padding: 1.5rem;
     margin: 5px 0;
     font-size: 2.5rem;
-    opacity: 0;
-    visibility: hidden;   
+    display: none; 
 }
+
+
 .answer.active{
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
 .answer p{
     padding: 1rem;

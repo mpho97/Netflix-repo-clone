@@ -82,47 +82,47 @@
             <p> What is Netflix?</p>
             <span class="open-answer">+</span>
         </div>
-        <!--div class="answer">
+        <div class="answer">
             <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
             <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows<br>
             and movies are added every week!</p>
-        </div-->
+        </div>
 
         <div class="question">
             <p>How much does Netflix cost?</p>
             <span class="open-answer">+</span>
         </div>
-        <!--div class="answer">
+        <div class="answer">
             <p>    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from R 49 to R 199 a month. No extra costs, no contracts</p>
-        </div-->
+        </div>
         <div class="question">
             <p>Where can I watch?</p>
             <span class="open-answer">+</span>
         </div>
-        <!--div class="answer">
+        <div class="answer">
             <p>    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from R 49 to R 199 a month. No extra costs, no contracts</p>
-        </div-->
+        </div>
         <div class="question">
             <p>How do I cancel?</p>
             <span class="open-answer">+</span>
         </div>
-        <!--div class="answer">
+        <div class="answer">
             <p>    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from R 49 to R 199 a month. No extra costs, no contracts</p>
-        </div-->
+        </div>
         <div class="question">
             <p>What can I watch on Netflix?</p>
             <span class="open-answer">+</span>
         </div>
-        <!--div class="answer">
+        <div class="answer">
             <p>    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from R 49 to R 199 a month. No extra costs, no contracts</p>
-        </div-->
+        </div>
         <div class="question">
             <p>Is Netflix good for kids?</p>
             <span class="open-answer">+</span>
         </div>
-        <!--div class="answer">
+        <div class="answer">
             <p>    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from R 49 to R 199 a month. No extra costs, no contracts</p>
-        </div-->
+        </div>
         
     </div>
     <div class="footer-container">
@@ -161,10 +161,30 @@
     </div>
 
     <script type="text/javascript">
-        const open = document.querySelector('open-answer');
+        /*function _(element){
+            return document.getElementById(element);
+        }
+        var open = _("open-answer");
+        var answer = _("answer");
+
         open.addEventListener('click', function(){
-            alert('hello');
+        });*/
+        const questions = document.querySelectorAll(".open-answer");
+        const answers = document.querySelectorAll(".answer");
+
+       // var answer = function(manual){
+            questions.forEach(question =>{
+            question.addEventListener("click", ()=>{
+                question.classList.toggle("active");
+
+            })
         });
+        //answer[manual].classList.toggle("active");
+
+       // }
+        
+       
+
     </script>
     </body>
 </html>
